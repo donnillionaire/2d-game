@@ -17,6 +17,14 @@ public class BirdScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //check if space has been pressed to flap the bird up
+        if (Input.GetKeyDown(KeyCode.Space)==true){
+
+            myRigidbody.linearVelocity =Vector2.up *10;
+
+        }
+     
+    
         
     }
 }
