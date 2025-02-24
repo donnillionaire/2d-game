@@ -5,6 +5,8 @@ public class BirdScript : MonoBehaviour
 
     public Rigidbody2D myRigidbody; // reference to rigid body 2d
 
+    public float flapStrength;
+
 
 
 
@@ -20,7 +22,7 @@ public class BirdScript : MonoBehaviour
         //check if space has been pressed to flap the bird up
         if (Input.GetKeyDown(KeyCode.Space)==true){
 
-            myRigidbody.linearVelocity =Vector2.up *10;
+            myRigidbody.linearVelocity =Vector2.up * flapStrength;
 
         }
      
